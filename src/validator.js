@@ -375,7 +375,7 @@ Validator.prototype.rule_numeric = function (element, type) {
 Validator.prototype.rule_email = function (element) {
     'use strict';
 
-    var re = /^([a-z0-9\._]){1,}@(([a-z0-9\._]{1,})\.){1,}([a-z]{2,3})$/i;
+    var re = /^([a-z0-9\._-]){1,}@(([a-z0-9\._]{1,})\.){1,}([a-z]{2,3})$/i;
     return re.test(element.value);
 };
 
